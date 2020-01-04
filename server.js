@@ -9,6 +9,9 @@ const app = express();
 
 const router = express.Router();
 
+//require our routes
+require("./config/routes")(router);
+
 app.use(express.static(__dirname + "/public"));
 
 //link handlebars and express app
