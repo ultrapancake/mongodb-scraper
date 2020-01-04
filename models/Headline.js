@@ -6,7 +6,7 @@ const headlineSchema = new Schema({
     required: true,
     unique: true
   },
-  summary: {
+  image: {
     type: String,
     required: true
   },
