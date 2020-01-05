@@ -3,7 +3,7 @@ const makeDate = function() {
   let formattedDate = "";
   formattedDate += d.getMonth() + 1 + "_";
   formattedDate += d.getDate() + "_";
-  formatteddate += d.getFullYear();
+  formattedDate += d.getFullYear();
   return formattedDate;
 };
 

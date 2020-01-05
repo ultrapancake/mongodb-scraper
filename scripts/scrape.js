@@ -15,13 +15,17 @@ var scrape = function(cb) {
         .children("img")
         .attr("src");
       //   console.log("Image: " + i + " " + img);
+      let url = $(this)
+        .children(".image")
+        .attr("href");
 
       if (head && img) {
         let headNeat = head.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
 
         let dataToAdd = {
           headline: headNeat,
-          image: img
+          image: img,
+          url: url
         };
         // console.log(dataToAdd);
         articles.push(dataToAdd);

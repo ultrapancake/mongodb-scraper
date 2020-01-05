@@ -40,6 +40,9 @@ $(document).ready(function() {
         "<img src='",
         article.image,
         "'>",
+        "<a class = 'btn btn-info' href='",
+        article.url,
+        "' target= '_blank'>Link to article</a>",
         "</div>",
         "</div>"
       ].join("")
