@@ -141,6 +141,7 @@ $(document).ready(function() {
         message: modalText,
         closeButton: true
       });
+      //Pretty sure this section is what is breaking and giving a 404 error
       let noteData = {
         _id: currentArticle._id,
         notes: data || []
