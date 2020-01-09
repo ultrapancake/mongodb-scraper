@@ -99,7 +99,7 @@ $(document).ready(function() {
     $(".note-container").append(notesToRender);
   }
 
-  function handleArticleDelete() {
+  function handleArticleDelete(event) {
     let articleToDelete = $(this)
       .parents(".card")
       .data();
