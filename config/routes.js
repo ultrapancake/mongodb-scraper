@@ -49,10 +49,10 @@ module.exports = function(router) {
     });
   });
 
-  router.get("api/notes/:headline_id?", function(req, res) {
+  router.get("/api/notes/:headlineid", function(req, res) {
     let query = {};
-    if (req.params.headline_id) {
-      query._id = req.params.headline_id;
+    if (req.params.headlineid) {
+      query._id = req.params.headlineid;
     }
 
     notesController.get(query, function(err, data) {
